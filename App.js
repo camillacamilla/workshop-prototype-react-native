@@ -1,21 +1,29 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { createStackNavigator } from "react-navigation";
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
-}
+import HomePage from "./pages/Home";
+import CameraPage from "./pages/Camera";
+import CheckinPage from "./pages/Checkin";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+// Custom transition?
+export default createStackNavigator(
+  {
+    Home: {
+      screen: HomePage
+    },
+    Camera: {
+      screen: CameraPage
+    },
+    Checkin: {
+      screen: CheckinPage
+    }
   },
-});
+  {
+    navigationOptions: {
+      header: null,
+      gesturesEnabled: true, //toogle gesture and show.
+      mode: "modal"
+    }
+  }
+);
