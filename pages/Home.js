@@ -8,6 +8,7 @@ import {
 } from "react-native";
 const { width, height } = Dimensions.get("window");
 
+// Scrollview: Change asset to a bigger height
 export default class Home extends React.Component {
   render() {
     return (
@@ -32,6 +33,7 @@ export default class Home extends React.Component {
   }
 }
 
+// Teach how to use dinamic values in top and left.
 const styles = StyleSheet.create({
   visibleClick: {
     position: "absolute",
