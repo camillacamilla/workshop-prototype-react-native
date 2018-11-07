@@ -8,12 +8,16 @@ import {
 } from "react-native";
 import { Camera, Permissions, FaceDetector } from "expo";
 
+import cameraOverlay from "../assets/cameraOverlay.png";
+import cameraDetected from "../assets/cameraOverlay-detected.png";
+
 const { width, height } = Dimensions.get("window");
 export default class CameraView extends React.Component {
   state = {
     hasCameraPermission: null,
     type: Camera.Constants.Type.back,
-    loaded: false
+    loaded: false,
+    detected: false
   };
 
   async componentDidMount() {
@@ -38,7 +42,17 @@ export default class CameraView extends React.Component {
 
   handleFacesDetected = () => {
     if (this.state.loaded) {
-      this.props.navigation.navigate("Checkin");
+      this.setState({
+        detected: true
+      });
+
+      setTimeout(() => {
+        this.props.navigation.navigate("Checkin");
+        this.setState({
+          detected: false,
+          loaded: false
+        });
+      }, 1000);
     }
   };
 
@@ -69,7 +83,7 @@ export default class CameraView extends React.Component {
               }}
             >
               <Image
-                source={require("../assets/cameraOverlay.png")}
+                source={this.state.detected ? cameraDetected : cameraOverlay}
                 style={{
                   position: "absolute",
                   width: width,
