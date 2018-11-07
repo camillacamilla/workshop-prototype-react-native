@@ -1,1 +1,0 @@
-# workshop-prototype-react-native
