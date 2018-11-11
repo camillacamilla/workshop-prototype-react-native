@@ -37,11 +37,10 @@ export default class Home extends React.Component {
 const styles = StyleSheet.create({
   visibleClick: {
     position: "absolute",
-    backgroundColor: "rgba(0,0,0,0.5)",
-    width: 140,
-    height: 50,
-    top: 260,
-    left: 30
+    width: '40%',
+    height: '7%',
+    top: '40%',
+    left: '7%'
   },
   container: {
     flex: 1,
