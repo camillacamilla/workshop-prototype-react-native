@@ -4,6 +4,7 @@ import {
   View,
   TouchableWithoutFeedback,
   Image,
+  StyleSheet,
   Dimensions
 } from "react-native";
 import { Camera, Permissions, FaceDetector } from "expo";
@@ -64,9 +65,9 @@ export default class CameraView extends React.Component {
       return <Text>No access to camera</Text>;
     } else {
       return (
-        <View style={{ flex: 1 }}>
+        <View style={styles.container}>
           <Camera
-            style={{ flex: 1 }}
+            style={styles.container}
             type={this.state.type}
             onFacesDetected={this.handleFacesDetected}
             faceDetectorSettings={{
@@ -76,30 +77,15 @@ export default class CameraView extends React.Component {
             }}
           >
             <View
-              style={{
-                flex: 1,
-                backgroundColor: "transparent",
-                flexDirection: "row"
-              }}
+              style={styles.imageWrapper}
             >
               <Image
                 source={this.state.detected ? cameraDetected : cameraOverlay}
-                style={{
-                  position: "absolute",
-                  width: width,
-                  height: height
-                }}
+                style={styles.faceOverlayMask}
               />
               <TouchableWithoutFeedback onPress={this.handleChangeCamera}>
                 <View
-                  style={{
-                    width: 70,
-                    height: 70,
-                    position: "absolute",
-                    bottom: 40,
-                    right: 40
-                    //backgroundColor: "rgba(255,255,255,0.5)"
-                  }}
+                  style={styles.toggleCameraContainer}
                 />
               </TouchableWithoutFeedback>
             </View>
@@ -109,3 +95,26 @@ export default class CameraView extends React.Component {
     }
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  imageWrapper: {
+    flex: 1,
+    backgroundColor: "transparent",
+    flexDirection: "row"
+  },
+  faceOverlayMask: {
+    position: "absolute",
+    width,
+    height
+  },
+  toggleCameraContainer: {
+    width: 70,
+    height: 70,
+    position: "absolute",
+    bottom: 40,
+    right: 40
+  }
+});
