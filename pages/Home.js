@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     width: "40%",
     height: "7%",
-    top: "40%",
+    top: "18%",
     left: "7%"
   },
   container: {
