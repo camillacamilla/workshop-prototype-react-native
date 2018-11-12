@@ -111,10 +111,10 @@ const styles = StyleSheet.create({
     height
   },
   toggleCameraContainer: {
-    width: 70,
-    height: 70,
-    position: "absolute",
-    bottom: 40,
-    right: 40
+    width: '20%',
+    height: '10%',
+    position: 'absolute',
+    bottom: '7%',
+    right: '10%'
   }
 });
