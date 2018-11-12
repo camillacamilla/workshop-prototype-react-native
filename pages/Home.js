@@ -2,22 +2,29 @@ import React from "react";
 import {
   StyleSheet,
   View,
+  ScrollView,
   Image,
   Dimensions,
   TouchableWithoutFeedback
 } from "react-native";
 const { width, height } = Dimensions.get("window");
 
-// Scrollview: Change asset to a bigger height
 export default class Home extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView
+        style={{
+          backgroundColor: "#000",
+          paddingTop: 0
+        }}
+        bounces={false}
+        showsVerticalScrollIndicator={false}
+      >
         <Image
           source={require("../assets/mainpage.png")}
           style={{
             width: width,
-            height: height
+            height: 1357
           }}
         />
 
@@ -28,7 +35,7 @@ export default class Home extends React.Component {
         >
           <View style={styles.visibleClick} />
         </TouchableWithoutFeedback>
-      </View>
+      </ScrollView>
     );
   }
 }
@@ -37,10 +44,10 @@ export default class Home extends React.Component {
 const styles = StyleSheet.create({
   visibleClick: {
     position: "absolute",
-    width: '40%',
-    height: '7%',
-    top: '40%',
-    left: '7%'
+    width: "40%",
+    height: "7%",
+    top: "40%",
+    left: "7%"
   },
   container: {
     flex: 1,
