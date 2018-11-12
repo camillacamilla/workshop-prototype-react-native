@@ -20,10 +20,10 @@ export default createStackNavigator(
     }
   },
   {
+    mode: "modal",
     navigationOptions: {
       header: null,
       gesturesEnabled: true, //toogle gesture and show.
-      mode: "modal"
     }
   }
 );
