@@ -10,8 +10,8 @@ export default class Home extends React.Component {
         <Image
           source={require("../assets/checkin.png")}
           style={{
-            width: width,
-            height: height
+            width,
+            height
           }}
         />
       </View>
