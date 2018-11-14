@@ -74,27 +74,25 @@ expo start
 
 | Link  | Description |
 |---|---|
-| [assets.zip]() | Iphone 6,7,8
-| [assets.zip]() | Iphone 10
-| [assets.zip]() | Android S8
+| [assets.zip](https://www.dropbox.com/s/wmdzbnawlr9f3dy/assets.zip?dl=0) | 375x667
 
 ### Part I - Home Page
 
 | Code Sample  | Description |
 |---|---|
-| [Home.js]() | Understanding react structure and add a image
-| [Home.js]() | How to use react native component Scroll View
-| [Home.js]() | Adding a modal alert after you tap the button
+| [Home.js](https://gist.github.com/zehfernandes/d9292d08410594e1aabff35aa060c619#file-home01-js) | Understanding React structure and add a image
+| [Home.js](https://gist.github.com/zehfernandes/d9292d08410594e1aabff35aa060c619#file-home02-js) | How to use react native component Scroll View
+| [Home.js](https://gist.github.com/zehfernandes/d9292d08410594e1aabff35aa060c619#file-home03-js) | Adding a modal alert after you tap the button
 
  
-### PART 2 - Navigate pages
+### Part 2 - Navigate pages
 
 | Code Sample  | Description |
 |---|---|
-| [App.js]() | Setup `react-navigation`
-| [Home.js](), [Checkin.js]() | Navigate from home to checkin page
+| [App.js](https://gist.github.com/zehfernandes/dcd96604d1de04c054b909d86b5a19a9#file-app-js) | Setup `react-navigation`
+| [Home.js](), [Checkin.js](https://gist.github.com/zehfernandes/dcd96604d1de04c054b909d86b5a19a9#file-checkin-js) | Navigate from home to checkin page
  
-### PART 3 - Camera
+### Part 3 - Camera
 
 | Code Sample  | Description |
 |---|---|
