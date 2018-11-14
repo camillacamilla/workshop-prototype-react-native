@@ -1,6 +1,26 @@
 # Workshop Prototype with React Native
 
-## Basic Setup
+## Contents
+
+1. [Tools & Prerequisites](#tools--prerequisites)
+2. [Installing the Prerequisites](#installing-the-prerequisites)
+3. [Guide Exercise](#guide-exercise)
+4. [Useful Links](#useful-links)
+
+## Tools & Prerequisites
+
+Here is a list of tools, software and libraries that will be used during the workshop.
+
+| Tool  | Description |
+|---|---|
+| *Code Editor* | A JavaScript code editor, [VSCode](https://code.visualstudio.com/) is recommended
+| *Command-Line* | A command-line application like Terminal (macOS) or [cmder](http://cmder.net/) (Windows)
+| [npm](https://www.npmjs.com/get-npm) (v5+) | Used to install third-party dependencies and tools
+| [Helper tools (macOS)](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/) | Gives Mac terminal users many commonly used commands
+| *Expo App* | Mobile app to preview your code [iPhone](https://itunes.apple.com/app/apple-store/id982107779) or [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www)
+| [`expo-cli`](https://expo.io/) | toolchain to help build React Native apps.
+
+## Installing the Prerequisites
 
 1. Install npm. [Get download link](https://www.npmjs.com/get-npm)
 
@@ -43,14 +63,48 @@ expo start
 ```
 
 8. Download the Expo CLI app. [iPhone](https://itunes.apple.com/app/apple-store/id982107779) or [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www)
+
 9. Open the camera and Scan the QR code.
 
 10. Bonus: Install [VScode](https://code.visualstudio.com/download) to follow the workshop.
 
-## Running your app on a simulator
+## Guide Exercise
 
-WIP
+### Part 0 - Assets
 
-## Troubleshooting
+| Link  | Description |
+|---|---|
+| [assets.zip]() | Iphone 6,7,8
+| [assets.zip]() | Iphone 10
+| [assets.zip]() | Android S8
 
-WIP
+### Part I - Home Page
+
+| Code Sample  | Description |
+|---|---|
+| [Home.js]() | Understanding react structure and add a image
+| [Home.js]() | How to use react native component Scroll View
+| [Home.js]() | Adding a modal alert after you tap the button
+
+ 
+### PART 2 - Navigate pages
+
+| Code Sample  | Description |
+|---|---|
+| [App.js]() | Setup `react-navigation`
+| [Home.js](), [Checkin.js]() | Navigate from home to checkin page
+ 
+### PART 3 - Camera
+
+| Code Sample  | Description |
+|---|---|
+| [Camera.js]() | Open camera
+
+## Useful Links
+
+- [React Native Documentation](https://facebook.github.io/react-native/docs/getting-started.html)
+- [React Navigation Documentation](https://reactnavigation.org/)
+- [Expo Documentation](https://github.com/jondot/awesome-react-native)
+- [React For Designers](https://reactfordesigners.com/) 
+- [Awesome React Native](https://github.com/jondot/awesome-react-native)
+- [Awesome React Native Education](https://github.com/hsavit1/Awesome-React-Native-Education)
