@@ -98,7 +98,11 @@ expo start
 
 | Code Sample  | Description |
 |---|---|
-| [Camera.js]() | Open camera
+| [Camera.js]() | Creating and using functions
+| [Camera.js]() | Understanding React components' lifecycle
+| [Camera.js]() | Using the <Camera> component
+| [Camera.js]() | Understainding states
+| [Camera.js]() | How to set states
 
 ## Useful Links
 
