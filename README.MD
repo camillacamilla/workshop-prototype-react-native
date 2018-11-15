@@ -85,7 +85,7 @@ expo start
 | [Home.js](https://gist.github.com/zehfernandes/d9292d08410594e1aabff35aa060c619#file-home03-js) | Adding a modal alert after you tap the button
 
  
-### Part 2 - Navigate pages
+### Part 2 - React Navigation 
 
 | Code Sample  | Description |
 |---|---|
