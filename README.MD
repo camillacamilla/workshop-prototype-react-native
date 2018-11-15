@@ -42,6 +42,12 @@ npm install -g expo-cli
 sudo chown -R $USER:`id -g -n $USER` /usr/local/
 ```
 
+or 
+
+```
+sudo chmod 755 /usr/local/
+```
+
 5. Create the project
 
 ```
